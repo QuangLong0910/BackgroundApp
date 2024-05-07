@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#D5AFE3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Tiêu đề -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of turns : "
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <!-- EditText -->
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="text"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_marginLeft="60dp"
+                android:layout_width="30dp"
+                android:background="@drawable/baseline_add_shopping_cart_24"
+                android:layout_height="30dp"
+                android:id="@+id/buy"
+                />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+
+        />
+
+    <Button
+        android:id="@+id/button_set_wallpaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#E49B9B"
+        android:text="Use pictures from your phone" />
+
+</LinearLayout>
